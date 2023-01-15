@@ -182,6 +182,54 @@
   font-size: 25px;
 }
 
+/* facts styles */
+.facts {
+  margin-bottom: 100px;
+}
+
+.facts-desc {
+  margin: 24px 0 70px;
+  width: 50%;
+}
+
+.achievements {
+  display: flex;
+  justify-content: space-around;
+}
+
+.achievement {
+  width: 242px;
+  height: 242px;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 1s;
+}
+
+.achievement img {
+  width: 25%;
+}
+
+.number {
+  font-weight: 600;
+  font-size: 45px;
+  color: #424242;
+}
+
+.achievement-name {
+  font-weight: 600;
+  font-size: 20px;
+  color: #727272;
+}
+
+.achievement:hover {
+  transform: rotate(90deg);
+}
+
 /* mobile styles */
 @media screen and (max-width: 576px) {
   /* header styles */
@@ -245,7 +293,7 @@
   .features-lists-container {
     flex-direction: column;
     text-align: center;
-    margin-top: 25px;
+    margin: 25px 0;
     gap: 10px;
     position: static;
   }
@@ -277,5 +325,21 @@
   .small-text {
     font-weight: 500;
     font-size: 20px;
+  }
+
+  /* facts styles */
+  .facts-info {
+    text-align: center;
+  }
+
+  .facts-desc {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .achievements {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
   }
 }
