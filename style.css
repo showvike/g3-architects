@@ -36,6 +36,17 @@
   color: #ffffff;
 }
 
+/* animation */
+@keyframes round-round {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* header styles */
 .header {
   padding-top: 50px;
@@ -257,6 +268,28 @@
   mix-blend-mode: luminosity;
 }
 
+/* some-architecture styles */
+.some-architectures-title {
+  text-align: center;
+}
+
+.architectures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  align-items: center;
+}
+
+.architecture {
+  padding: 15%;
+}
+
+.architecture img {
+  width: 100%;
+  animation: round-round 5s ease-in-out 1s infinite alternate;
+}
+
+/* footer styles */
 .footer {
   background: #fff4e7;
   border-radius: 8px;
@@ -400,5 +433,10 @@
 
   .sponsors {
     margin-bottom: 25px;
+  }
+
+  /* some-architectures styles */
+  .some-architectures-title {
+    font-size: 35px;
   }
 }
