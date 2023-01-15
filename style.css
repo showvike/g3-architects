@@ -8,6 +8,10 @@
   font-family: "Work Sans", sans-serif;
 }
 
+.default-margin {
+  margin: 0 10%;
+}
+
 .default-padding {
   padding: 0 10%;
 }
@@ -253,6 +257,19 @@
   mix-blend-mode: luminosity;
 }
 
+.footer {
+  background: #fff4e7;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  text-align: center;
+  padding: 38px 0;
+}
+
+.footer-para {
+  color: #424242;
+  font-size: 20px;
+}
+
 /* mobile styles */
 @media screen and (max-width: 576px) {
   /* header styles */
@@ -379,5 +396,9 @@
     flex-direction: column;
     align-items: center;
     gap: 25px;
+  }
+
+  .sponsors {
+    margin-bottom: 25px;
   }
 }
